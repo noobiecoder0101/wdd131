@@ -11,6 +11,11 @@ header, footer {
     text-align: center;
 }
 
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 /* Added relative positioning to keep the button inside the header safely */
 .header-container {
     position: relative;
@@ -35,6 +40,11 @@ header, footer {
 
 #menu.open::before {
     content: "✖️";
+}
+
+nav {
+    display: flex;
+    justify-content: center;
 }
 
 .navigation {
@@ -62,7 +72,7 @@ header, footer {
 
 .navigation a:hover {
     background-color: #904ec0;
-    color: #c098dd;
+    color: #fff;
     font-weight: 700;
 }
 
@@ -72,7 +82,7 @@ main {
     padding: 1rem;
 }
 
-h2 { text-align: center; margin: 1rem 0; color: #333; }
+h1 { text-align: center; margin: 1rem 0; color: #333; }
 
 .temple-grid {
     display: grid;

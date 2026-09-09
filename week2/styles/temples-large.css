@@ -1,8 +1,12 @@
 @media (min-width: 37.5em) {
     #menu { display: none; } /* Hide hamburger on desktop */
 
-    .navigation {
+    nav {
         display: flex; /* Always show menu on desktop */
+    }
+
+    .navigation {
+        display: flex;
         flex-direction: row;
         justify-content: center;
     }
