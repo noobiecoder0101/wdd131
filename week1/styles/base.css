@@ -33,12 +33,10 @@ header {
 #course-title {
     display: block;
     font-family: var(--font-primary);
-    margin: 0;
-    padding: 20px 0;
-}
-
-.myname {
-    color: var(--color-accent);
+    margin: 0 0 10px;
+    padding: 20px;
+    background-color: var(--color-bg);
+    border-radius: 10px;
 }
 .flexnav {
     display: flex;
@@ -127,7 +125,7 @@ main {
     padding: 20px;
 }
 
-.card h1 {
+.card h2 {
     margin: 0;
     padding: 15px 20px;
     color: var(--color-accent);
@@ -161,7 +159,7 @@ main {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.me-1 h1, .me-2 h1 {
+.me-1 h2, .me-2 h2 {
     grid-column: 1 / -1;
     color: var(--color-accent);
     margin-bottom: 15px;
@@ -173,13 +171,13 @@ main {
     border-radius: 8px;
 }
 
-.gridnav h1 {
+.gridnav h2 {
     color: var(--color-accent);
     margin-bottom: 20px;
     text-align: center;
 }
 
-.gridnav nav {
+.resource-links {
     display: flex;
     flex-direction: column;
 }
@@ -225,22 +223,9 @@ main {
     margin-bottom: 30px;
     width: 100%;
 }
-#course-title{
-    background-color: var(--color-bg);
-    
-    padding: 20px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
 header h1{
   color: var(--color-primary);  
 } 
-#name{
-    color:var(--color-accent) ;
-    text-shadow: 6cm;
-
-}
-h1,h2,h3{
+h1, h2, h3{
     font-family: var(--font-heading);
 }

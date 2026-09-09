@@ -3,27 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="this is a place holder text for now ">
     <meta name="author" content="Uwagbai Edeoba Marvin">
-    <meta name="description" content="a basic webpage layout">
+    <meta name="description" content="Learn about Uwagbai Edeoba Marvin, his software development studies, Nigerian heritage, and recommended web development resources.">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
-    <title>About Me</title>
+    <title>WDD 131 - Dynamic Web Fundamentals | Uwagbai Edeoba Marvin</title>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <span id="courseTitle">
-                <h1>WDD 131 - Dynamic web Fundamental <span id="name"> Uwagbai Edeoba Marvin</span></h1>
-        </span> 
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         <div class="flexnav">
-            <nav class="navigation">
+            <nav class="navigation" aria-label="Primary navigation">
                 <ul>
                     <li><a href="https://www.linkedin.com/" class="rice" target="_blank">linkedin</a></li>
                     <li><a href="https://byupw.instructure.com/" class="rice">canvas</a></li>
                     <li><a href="https://www.churchofjesuschrist.org/study/scriptures" class="rice">scriptures</a></li>
-                    <li><a href="" class="rice">Final project</a></li>
+                    <li><a href="../week2/temples.html" class="rice">Final project</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +32,7 @@
     </header>
     <main> 
         <div class="myheader-name">
-            <span><h1>Uwagbai Edeoba Marvin</h1></span>
+                <h1>Uwagbai Edeoba Marvin</h1>
         </div>
 
           <section class="card">
@@ -42,7 +40,7 @@
 
                 <!-- section for the main about me -->
                 <section class="me-1">
-                <h1>About Me</h1>
+                <h2>About Me</h2>
                 <p>
                     Hi, I'm Uwagbai Edeoba Marvin, an aspiring software developer based in Lagos, Nigeria. Currently pursuing a degree in Software Development at BYU-Pathway Worldwide, I am passionate about leveraging technology to build simple, impactful solutions for real-world problems. I love diving into programming, web development, and AI. As a creative thinker, I'm always eager to collaborate, grow, and build digital tools that make a difference.
                 </p>
@@ -52,9 +50,9 @@
 
                 <!-- this is the section card for the nationality part -->
                 <section class="me-2">
-                <h1>
+                <h2>
                     Lagos, Nigeria
-                </h1>
+                </h2>
                 <p>
                     Nigeria is Africa’'s most populous nation, powered by a vibrant culture, an unstoppable entrepreneurial spirit, and a booming tech scene. Home to over 200 million people, it boasts one of the youngest populations globally and a world-famous creative industry spanning music, film, and innovation. At the heart of this growth is Lagos—the country's economic powerhouse. Often called the "Silicon Valley of Africa," Lagos is a dynamic startup hub where ambition meets opportunity, blending bustling markets, fintech leaders like Paystack, and scenic coastal views.
                 </p>
@@ -65,19 +63,19 @@
             </section>
 
             <section class="card">
-                <h1>Web Dev Recources</h1>
+                <h2>Web Development Resources</h2>
 
-                <section class="gridnav">
-                    <nav>
+                    <section class="gridnav">
+                    <div class="resource-links">
                         <ul>
-                            <li><a href="" target="_blank">discord group for a web dev community</a></li>
-                            <li><a href="" target="_blank">free code camp</a></li>
-                            <li><a href="" target="_blank">w3schools</a></li>
-                            <li><a href="" target="_blank">coursera</a></li>
-                            <li><a href="" target="_blank">udemy</a></li>
-                            <li><a href="" target="_blank">the odin project</a></li>
+                            <li><a href="https://discord.com/" target="_blank" rel="noopener">Discord web development community</a></li>
+                            <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">freeCodeCamp</a></li>
+                            <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+                            <li><a href="https://www.coursera.org/" target="_blank" rel="noopener">Coursera</a></li>
+                            <li><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></li>
+                            <li><a href="https://www.theodinproject.com/" target="_blank" rel="noopener">The Odin Project</a></li>
                         </ul>
-                    </nav>
+                    </div>
 
                 </section>
              
@@ -90,6 +88,5 @@
          <p>©️<span class="currentyear"></span> 😊 Uwagbai Edeoba Marvin 😊 Nigeria </p>
         <p id="lastmodified"></p>
 </footer>
-    <script src="scripts/get_dated.js"></script>
 </body>
 </html>
