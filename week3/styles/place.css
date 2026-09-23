@@ -54,7 +54,8 @@ footer {
     color: var(--white); 
     text-align: center; 
     padding: 1rem; 
-    border-radius: 20px;
+    border-top-left-radius: 40px;
+    border-top: 5px solid var(--secondary-color); 
 }
 
 /* 3. Media Query */
