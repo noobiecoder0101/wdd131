@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria | Country Page</title>
+   <meta name="description" content="Explore Nigeria's geography and real-time weather data. A project for my WDD 131 ( Dynamic Web Fundamentals.)">
+    <meta name="author" content="Uwagbai Edeoba Marvin">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/large-place.css" media="screen and (min-width: 700px)">
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/local-nigerian-monkey-small.webp" media="(max-width: 699px)">
+                <source srcset="images/local-nigerian-monkey-large.webp" media="(min-width: 700px)">
+                <img src="images/local-nigerian-monkey-small.webp" alt="Nigerian monkey in a forest" loading="lazy">
+            </picture>
+        </div>
+
+        <section class="info">
+            <h2>Data</h2>
+            <ul class="stats">
+                <li><strong>Area:</strong> 923,769 sq km</li>
+                <li><strong>Population:</strong> 230,842,000</li>
+                <li><strong>Capital:</strong> Abuja</li>
+                <li><strong>Languages:</strong> English</li>
+                <li><strong>Currency:</strong> Nigerian Naira</li>
+                <li><strong>Time Zone:</strong> UTC+1</li>
+                <li><strong>Calling Code:</strong> +234</li>
+                <li><strong>Internet TLD:</strong> .ng</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2 class="weather-heading">Weather</h2>
+            <img src="images/weather-icon.svg" alt="weather icon" class="weather-icon-mobile">
+            <ul class="stats">
+                <li><strong>Temperature:</strong> <span id="temp">10</span> °C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> <span id="wind">5</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+<footer>
+         <p>©️<span class="currentyear"></span> 😊 Uwagbai Edeoba Marvin 😊 Nigeria </p>
+        <p id="lastmodified"></p>
+</footer>  
+
+<script src="scripts/place.js"></script>
+</body>
+</html>
