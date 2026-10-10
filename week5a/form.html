@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form | WDD 131</title>
+    <meta name="description" content="Product review form for WDD 131">
+    <meta name="author" content="Uwagbai Edeoba Marvin">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/the.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <!-- Product Select (Dynamically populated by JS) -->
+            <label for="product">Product Name *</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <!-- Overall Rating (Radio Buttons) -->
+            <fieldset>
+                <legend>Overall Rating *</legend>
+                <label><input type="radio" name="rating" value="1" required> 1 ☆</label>
+                <label><input type="radio" name="rating" value="2" required> 2 ☆</label>
+                <label><input type="radio" name="rating" value="3" required> 3 ☆</label>
+                <label><input type="radio" name="rating" value="4" required> 4 ☆</label>
+                <label><input type="radio" name="rating" value="5" required> 5 ☆</label>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="install-date">Date of Installation *</label>
+            <input type="date" id="install-date" name="install-date" required>
+
+            <!-- Useful Features (Checkboxes) -->
+            <fieldset>
+                <legend>Which features did you find useful?</legend>
+                <label><input type="checkbox" name="feature" value="design"> Design</label>
+                <label><input type="checkbox" name="feature" value="durability"> Durability</label>
+                <label><input type="checkbox" name="feature" value="ease"> Ease of Use</label>
+                <label><input type="checkbox" name="feature" value="performance"> Performance</label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review" rows="4"></textarea>
+
+            <!-- User Name -->
+            <label for="username">Your Name</label>
+            <input type="text" id="username" name="username">
+
+            <!-- Submit Button -->
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Uwagbai Edeoba Marvin | Nigeria</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>

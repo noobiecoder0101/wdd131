@@ -1,0 +1,95 @@
+/* --- form.css --- */
+
+/* Basic Reset & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header & Footer Styling */
+header, footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Main Container */
+main {
+    max-width: 600px; /* Keeps the form from stretching too wide on desktop */
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Form Layout (The most important part) */
+form {
+    display: flex;
+    flex-direction: column; /* Stacks everything top-to-bottom */
+    gap: 1.5rem; /* Puts breathing room between each question */
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Inputs, Selects, and Textareas */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit; /* Makes sure the textarea uses Roboto */
+}
+
+/* Fieldsets (For Radio Buttons and Checkboxes) */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+fieldset legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    color: #2c3e50;
+}
+
+/* Fix spacing for the radio buttons/checkboxes */
+fieldset label {
+    font-weight: normal;
+    display: block; /* Stacks the checkboxes vertically */
+    margin-bottom: 0.5rem;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #219150;
+}
