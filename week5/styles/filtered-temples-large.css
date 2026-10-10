@@ -1,0 +1,23 @@
+@media (min-width: 37.5em) {
+    #menu { display: none; } /* Hide hamburger on desktop */
+
+    nav {
+        display: flex; /* Always show menu on desktop */
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navigation a {
+        display: block;
+         border-bottom: none;
+         }
+
+    /* 3 Columns for Desktop */
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
