@@ -68,15 +68,36 @@ function displayProjects(projectList) {
     });
 }
 
-displayProjects(projects);
+if (gallery) {
+    displayProjects(projects);
+}
 
 
 
-const currentYear = document.querySelector('.currentyear');
+const currentYear = document.querySelector('#currentyear');
 const lastModified = document.querySelector('#lastmodified');
 
 const today = new Date();
 
-currentYear.textContent = today.getFullYear();
+if (currentYear) {
+    currentYear.textContent = today.getFullYear();
+}
 
-lastModified.textContent = `Last Modified: ${document.lastModified}`;
+if (lastModified) {
+    lastModified.textContent = `Last Modified: ${document.lastModified}`;
+}
+
+function trackVisits() {
+    let visits = Number(window.localStorage.getItem("portfolioVisits")) || 0;
+
+    if (visits === 0) {
+        console.log("Welcome to my portfolio! This is your first time here.");
+    } else {
+        console.log(`Welcome back! You have visited ${visits} times.`);
+    }
+
+    visits++;
+    window.localStorage.setItem("portfolioVisits", visits);
+}
+
+trackVisits();

@@ -155,6 +155,45 @@ footer {
     margin-bottom: 1rem;
 }
 
+.contact-form {
+    display: grid;
+    gap: 0.5rem;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--bg-ink-black);
+    border-radius: 4px;
+    font: inherit;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+    justify-self: start;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--bg-ink-black);
+    color: var(--text-light);
+    font: 700 1rem 'Outfit', sans-serif;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: var(--accent-thistle);
+    color: var(--bg-ink-black);
+}
+
 .social-links {
     list-style: none;
     display: flex;
